@@ -472,43 +472,33 @@
         </div>
       </section>
     </main>
-    <div class="modal-overlay">
+    <div class="modal-overlay is-open">
       <div class="modal">
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias id
-          pariatur voluptate eligendi voluptatem cumque vel odit velit, aperiam
-          vero aliquam assumenda dolorem molestiae illo vitae officia quibusdam
-          esse rerum maiores tempore mollitia repellendus! Repellendus nulla rem
-          dolorem numquam, porro expedita vero nam non ab quod enim hic
-          repudiandae, dolore optio a quo. Vitae esse quia, libero pariatur
-          adipisci error debitis sed tenetur! Aut repudiandae eos ullam
-          repellendus reprehenderit, nihil delectus quis aperiam quibusdam eum,
-          amet debitis recusandae cum temporibus aspernatur excepturi ipsum sed
-          sequi minima, similique officiis. At voluptate voluptas ullam odio
-          nobis est, laboriosam quod corrupti qui obcaecati reprehenderit.
-          Iusto, corrupti? Cum magni exercitationem neque maxime officia qui
-          officiis, cupiditate sequi repellat itaque odit dolorum natus
-          voluptate nulla commodi nisi iusto at obcaecati vel assumenda corrupti
-          nam. Fugiat rem nobis quod architecto sunt, reprehenderit quasi cum
-          molestias quisquam error excepturi eum explicabo similique ea velit
-          adipisci provident atque possimus accusamus aut, porro esse quis?
-          Accusantium nam earum necessitatibus sequi repellendus inventore sed
-          dolores veritatis deleniti reiciendis iste recusandae mollitia quaerat
-          quibusdam, quos suscipit quae facilis ea dignissimos distinctio! Ullam
-          quisquam amet ut dolor facere, placeat delectus cumque dignissimos.
-          Velit, tempora, repellat vel at similique error atque illum corporis
-          dolores dolor cumque? Rem fugit aliquid tenetur omnis accusantium
-          quaerat maiores nam natus. Rerum doloribus est quaerat impedit neque
-          enim pariatur animi, sit dolorum ipsa quos, natus sint voluptatem quam
-          provident at voluptates rem dignissimos tempore dicta eaque expedita
-          praesentium. Temporibus cum consectetur eos illum recusandae qui modi
-          et neque necessitatibus laborum ut asperiores architecto, sequi porro
-          voluptas, labore non voluptatum repudiandae quidem atque dolore iusto
-          nam? Modi molestiae exercitationem in sed qui ipsa, eveniet id harum
-          quasi animi dolorum commodi iure eligendi sit delectus. Harum dolorum
-          inventore ducimus quisquam eveniet delectus rem! Distinctio minus
-          tempore necessitatibus temporibus atque facere.
-        </p>
+        <div class="close-button">close</div>
+        <form action="" class="">
+          <fieldset class="modal-fieldset">
+            <legend>Leave your contacts and we will call you back</legend>
+            <label for="client-name" class="label-name">Name</label>
+            <input type="text" class="input-name" id="client-name" />
+
+            <label for="client-tel" class="label-tel">Phone</label>
+            <input type="tel" class="input-tel" id="client-tel" />
+
+            <label for="client-email" class="label-email">Email</label>
+            <input type="email" class="input-email" id="client-email" />
+
+            <label for="client-textarea" class="textarea-comment"
+              >Comment</label
+            >
+            <textarea id="client-textarea" rows="4"> </textarea>
+          </fieldset>
+          <input type="checkbox" class="agreement" id="license-agreement" />
+          <label for="license-agreement" class="label-agreement">
+            I accept the terms and conditions of the
+            <a href="">Privacy Policy</a></label>
+
+          <button type="submit">Send</button>
+        </form>
       </div>
     </div>
     <footer class="basement">
@@ -575,15 +565,21 @@
         <div class="footer-form-box">
           <p class="footer-form-title">Subscribe</p>
           <form action="" class="footer-form">
-          <label for="footer-mail" class="footer-form-label">
-            <input type="email" class="footer-input" id="footer-mail" placeholder="E-mail" />
-          </label>
-          <button class="send-button" type="submit">Subscribe
-            <svg class="send-svg" width="24" height="24">
-              <use href="./images/icons.svg#icon-iconSend"></use>
-            </svg>
-          </button>
-        </form>
+            <label for="footer-mail" class="footer-form-label">
+              <input
+                type="email"
+                class="footer-input"
+                id="footer-mail"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="send-button" type="submit">
+              Subscribe
+              <svg class="send-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-iconSend"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
