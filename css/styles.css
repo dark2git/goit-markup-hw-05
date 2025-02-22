@@ -633,6 +633,10 @@ address ul li a:active {
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.send-svg {
+  fill: var(--white);
+}
+
 .send-button:hover,
 .send-button:active {
   background: var(--ocean);;
