@@ -643,7 +643,7 @@ address ul li a:active {
 }
 
 /* Overlay */
-.modal-overlay {
+.backdrop {
   background: var(--navy-blue-modal);
   position: fixed;
   top: 0;
@@ -658,7 +658,7 @@ address ul li a:active {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-overlay.is-open {
+.backdrop.is-open {
   opacity: 1;
   pointer-events: auto;
 }
@@ -681,12 +681,23 @@ address ul li a:active {
   border-radius: 50%;
   background-color: var(--cornflower);
   border: 1px solid rgba(0, 0, 0, 0.1);
+  fill: var(--navy-blue);
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
   top: 24px;
   right: 24px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-button:hover {
+  background-color: var(--ocean);
+  border-color: var(--ocean);
+  fill: var(--white);
 }
 
 .modal-form {
@@ -697,12 +708,6 @@ address ul li a:active {
   margin: 16px 24px;
 }
 
-.modal-fieldset {
-  display: flex;
-  flex-direction: column;
-  border: none;
-  width: 360px;
-}
 
 .modal-header {
   text-align: center;
