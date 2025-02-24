@@ -674,14 +674,14 @@ address ul li a:active {
 }
 
 .modal {
-  position: relative;
+  position: absolute;
   top: 80px;
   background: var(--dairy);
   border-radius: 4px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   width: 408px;
-  height: 584px;
+  min-height: 584px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -699,13 +699,17 @@ address ul li a:active {
   right: 24px;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* To reset the default  paddings that an element has from the browser. */
+    padding: 0;
 }
 
-.close-button:hover {
+.close-button:hover,
+.close-button:focus {
   background-color: var(--ocean);
   border-color: var(--ocean);
+  outline: none;
 }
 
 .close-icon {
@@ -713,7 +717,8 @@ address ul li a:active {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-button:hover .close-icon {
+.close-button:hover .close-icon,
+.close-button:focus .close-icon {
   fill: var(--white);
 }
 
@@ -736,7 +741,7 @@ address ul li a:active {
   color: var(--navy-blue);
   width: 360px;
   height: 24px;
-  margin: 72px 24px 24px 24px;
+  margin: 72px 24px 16px 24px;
 }
 
 .fieldset-label {
