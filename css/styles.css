@@ -668,7 +668,7 @@ address ul li a:active {
 }
 
 .backdrop:not(.is-open) .modal {
-  transform: scale(0.4) rotate(49deg);
+  transform: translate(50px, -50px) scale(0.4) rotate(49deg);
 }
 
 .modal {
