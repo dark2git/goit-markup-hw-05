@@ -592,11 +592,16 @@
           <label for="client-textarea" class="fieldset-label">Comment</label>
           <textarea class="modal-form-textarea" id="client-textarea" rows="10" placeholder="Text input"></textarea>
           <div class="privacy">
-            <input type="checkbox" class="agreement" id="license-agreement" />
+            <input type="checkbox" class="agreement-checkbox visually-hidden" id="license-agreement" />
             <label for="license-agreement" class="label-agreement">
+              <span class="custom-checkbox">
+                <svg class="check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checked"></use>
+                </svg>
+                </span>
               I accept the terms and conditions of the
-              <a class="form-link" href="">Privacy Policy</a></label
-            >
+              <a class="form-link" href="">Privacy Policy</a>
+            </label>
           </div>
 
           <button class="order-button" type="submit">Send</button>

@@ -689,8 +689,8 @@ address ul li a:active {
   right: 24px;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-button:hover {
@@ -707,7 +707,6 @@ address ul li a:active {
   fill: var(--white);
 }
 
-
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -715,7 +714,6 @@ address ul li a:active {
   width: 360px;
   margin: 16px 24px;
 }
-
 
 .modal-header {
   text-align: center;
@@ -807,6 +805,34 @@ address ul li a:active {
   align-items: center;
 }
 
+.custom-checkbox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid var(--navy-blue-modal);
+  margin-right: 8px;
+  cursor: pointer;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.check-icon {
+  fill: none;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.agreement-checkbox:checked + label .check-icon {
+  fill: var(--cloud);
+}
+
+.agreement-checkbox:checked + label .custom-checkbox {
+  border: 1px solid var(--ocean);
+  background-color: var(--ocean);
+}
+
 .label-agreement {
   font-family: var(--font-family);
   font-weight: 400;
@@ -814,6 +840,9 @@ address ul li a:active {
   line-height: 1.16667;
   letter-spacing: 0.04em;
   color: var(--light-slate);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .form-link {
@@ -821,6 +850,7 @@ address ul li a:active {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: var(--iris);
+  padding-left: 4px;
 }
 
 .modal-form .order-button {
