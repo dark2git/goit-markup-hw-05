@@ -825,7 +825,7 @@ address ul li a:active {
 
 .privacy {
   width: 360px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   margin-bottom: 24px;
 }
@@ -882,5 +882,5 @@ address ul li a:active {
 
 .modal-form .order-button {
   text-align: center;
-  margin-top: 24px;
+  margin-top: 0;
 }
