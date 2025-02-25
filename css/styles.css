@@ -660,7 +660,7 @@ address ul li a:active {
   visibility: hidden;
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-open {
@@ -684,7 +684,7 @@ address ul li a:active {
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   width: 408px;
   min-height: 584px;
-  padding: 72px 24px 24px 24px; 
+  padding: 72px 24px 24px 24px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -703,8 +703,8 @@ address ul li a:active {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    /* To reset the default  paddings that an element has from the browser. */
-    padding: 0;
+  /* To reset the default  paddings that an element has from the browser. */
+  padding: 0;
 }
 
 .close-button:hover,
@@ -813,6 +813,7 @@ address ul li a:active {
   margin-bottom: 16px;
   outline: transparent;
   background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-textarea::placeholder {
@@ -835,8 +836,10 @@ address ul li a:active {
   border: 1px solid var(--navy-blue-modal);
   margin-right: 8px;
   cursor: pointer;
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: transparent;
 }
 
 .check-icon {
@@ -857,7 +860,7 @@ address ul li a:active {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--light-slate);
   display: flex;
