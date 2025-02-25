@@ -812,6 +812,7 @@ address ul li a:active {
   display: block;
   margin-bottom: 16px;
   outline: transparent;
+  background-color: transparent;
 }
 
 .modal-form-textarea::placeholder {
