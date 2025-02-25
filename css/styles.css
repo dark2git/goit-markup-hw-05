@@ -709,7 +709,7 @@ address ul li a:active {
 .close-button:hover,
 .close-button:focus {
   background-color: var(--ocean);
-  border-color: var(--ocean);
+  border: none;
   outline: none;
 }
 
