@@ -797,6 +797,10 @@ address ul li a:active {
   fill: var(--iris);
 }
 
+.textarea-container {
+  margin-bottom: 16px;
+}
+
 .modal-form-textarea {
   resize: none;
   padding: 8px 16px;
@@ -810,7 +814,6 @@ address ul li a:active {
   line-height: 1.17;
   letter-spacing: 0.04em;
   display: block;
-  margin-bottom: 16px;
   outline: transparent;
   background-color: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -824,6 +827,7 @@ address ul li a:active {
   width: 360px;
   display: flex;
   align-items: center;
+  margin-bottom: 24px;
 }
 
 .custom-checkbox {
@@ -852,7 +856,7 @@ address ul li a:active {
 }
 
 .agreement-checkbox:checked + label .custom-checkbox {
-  border: 1px solid var(--ocean);
+  border: none;
   background-color: var(--ocean);
 }
 
