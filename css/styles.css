@@ -825,7 +825,7 @@ address ul li a:active {
 
 .privacy {
   width: 360px;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   margin-bottom: 24px;
 }
