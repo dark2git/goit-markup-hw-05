@@ -805,6 +805,7 @@ address ul li a:active {
   resize: none;
   padding: 8px 16px;
   border: 1px solid var(--navy-blue-modal);
+  color: var(--navy-blue-modal);
   border-radius: 4px;
   width: 100%;
   height: 120px;
@@ -850,12 +851,13 @@ address ul li a:active {
 }
 
 .agreement-checkbox:checked + label .check-icon {
-  fill: var(--cloud);
+  /* fill: var(--cloud); */
 }
 
 .agreement-checkbox:checked + label .custom-checkbox {
   border: none;
   background-color: var(--ocean);
+  fill: var(--cloud);
 }
 
 .label-agreement {
