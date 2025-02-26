@@ -825,8 +825,6 @@ address ul li a:active {
 
 .privacy {
   width: 360px;
-  /* display: flex; */
-  align-items: center;
   margin-bottom: 24px;
 }
 
@@ -867,9 +865,6 @@ address ul li a:active {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--light-slate);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 
 .form-link {
@@ -877,7 +872,6 @@ address ul li a:active {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: var(--iris);
-  padding-left: 4px;
 }
 
 .modal-form .order-button {
